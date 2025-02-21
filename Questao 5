@@ -1,0 +1,12 @@
+# Solicita ao usuário o número N
+N = int(input("Digite o número N para exibir os primeiros termos da sequência de Fibonacci: "))
+
+# Inicializa os dois primeiros termos da sequência de Fibonacci
+a, b = 0, 1
+
+# Exibe os primeiros N termos da sequência de Fibonacci
+print("Sequência de Fibonacci:")
+for i in range(N):
+    print(a, end=" ")
+    # Atualiza os valores de a e b
+    a, b = b, a + b
