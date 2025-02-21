@@ -1,0 +1,9 @@
+# Solicita ao usuário os dois números inteiros
+A = int(input("Digite o primeiro número (A): "))
+B = int(input("Digite o segundo número (B): "))
+
+# Exibe os números ímpares dentro do intervalo [A, B]
+print(f"Números ímpares entre {A} e {B}:")
+for num in range(A, B + 1):  # Inclui o limite B
+    if num % 2 != 0:  # Verifica se o número é ímpar
+        print(num)
