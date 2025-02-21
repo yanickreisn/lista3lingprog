@@ -1,0 +1,16 @@
+# Inicializa a variável para armazenar a soma dos números positivos
+soma = 0
+
+# Solicita números ao usuário até que um número negativo seja digitado
+while True:
+    numero = float(input("Digite um número (digite um número negativo para encerrar): "))
+    
+    # Verifica se o número é negativo
+    if numero < 0:
+        break
+    
+    # Adiciona o número à soma se for positivo
+    soma += numero
+
+# Exibe a soma dos números positivos digitados
+print(f"A soma dos números positivos digitados é: {soma:.2f}")
